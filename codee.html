@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Dream Cars</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#050505;
+      color:white;
+    }
+
+    header{
+      text-align:center;
+      padding:25px;
+      background:linear-gradient(90deg,#000,#8b0000,#000);
+      border-bottom:2px solid red;
+    }
+
+    header h1{
+      font-size:45px;
+      margin-bottom:8px;
+    }
+
+    header p{
+      color:#ccc;
+      font-size:15px;
+    }
+
+    .cars{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:20px;
+      padding:50px 5%;
+    }
+
+    .car-card{
+      background:#111;
+      border-radius:18px;
+      overflow:hidden;
+      border:1px solid #222;
+      transition:0.3s;
+      box-shadow:0 8px 25px rgba(0,0,0,0.6);
+    }
+
+    .car-card:hover{
+      transform:translateY(-8px);
+      border-color:red;
+    }
+
+    .car-card img{
+      width:100%;
+      height:210px;
+      object-fit:cover;
+    }
+
+    .content{
+      padding:18px;
+    }
+
+    .content h2{
+      font-size:22px;
+      color:red;
+      margin-bottom:8px;
+    }
+
+    .content p{
+      font-size:13px;
+      color:#ccc;
+      line-height:1.6;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#000;
+      color:#888;
+      font-size:13px;
+      border-top:1px solid #222;
+    }
+
+    @media(max-width:1100px){
+
+      .cars{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+    }
+
+    @media(max-width:700px){
+
+      .cars{
+        grid-template-columns:1fr;
+      }
+
+      header h1{
+        font-size:34px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Luxury Dream Cars</h1>
+    <p>Experience luxury, speed and power 🔥</p>
+  </header>
+
+  <section class="cars">
+
+    <!-- Porsche -->
+    <div class="car-card">
+
+      <img src="https://images.unsplash.com/photo-1611821064430-0d40291d0f0b?q=80&w=1600&auto=format&fit=crop" alt="Porsche GT4">
+
+      <div class="content">
+        <h2>Porsche GT4</h2>
+
+        <p>
+          Stunning pink Porsche GT4 with aggressive styling and incredible road performance.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- McLaren -->
+    <div class="car-card">
+
+      <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?q=80&w=1600&auto=format&fit=crop" alt="McLaren 720S">
+
+      <div class="content">
+        <h2>McLaren 720S</h2>
+
+        <p>
+          A futuristic supercar delivering breathtaking speed with premium luxury design.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Mercedes -->
+    <div class="car-card">
+
+      <img src="https://images.unsplash.com/photo-1617654112368-307921291f42?q=80&w=1600&auto=format&fit=crop" alt="Mercedes AMG">
+
+      <div class="content">
+        <h2>Mercedes AMG GT</h2>
+
+        <p>
+          Luxury meets performance with handcrafted engineering and sporty elegance.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Ferrari -->
+    <div class="car-card">
+
+      <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=1600&auto=format&fit=crop" alt="Ferrari SF90">
+
+      <div class="content">
+        <h2>Ferrari SF90</h2>
+
+        <p>
+          Iconic Italian supercar featuring extreme power, speed and bold styling.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2025 Luxury Dream Cars | Hosted on AWS S3</p>
+  </footer>
+
+</body>
+</html>
